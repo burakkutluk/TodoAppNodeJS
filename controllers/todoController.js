@@ -34,7 +34,7 @@ const createTodo = async (req, res) => {
 // get all todos
 const getAllTodos = async (req, res) => {
   const { page } = req.query;
-  const limit = 2;
+  const limit = 10;
   const skip = Number(page - 1) * limit;
   try {
     const todoGetAll = await todo.find({}).limit(limit).skip(skip);
