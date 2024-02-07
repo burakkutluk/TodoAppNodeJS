@@ -19,7 +19,6 @@ app.get("/", (req, res) => {
 })
 
 //route
-
 app.use("/api", todoRoute)
 
 app.listen(port, () => {
